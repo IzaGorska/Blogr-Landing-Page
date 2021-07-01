@@ -1,0 +1,156 @@
+@media(min-width: $tablet)
+    header
+        min-height: 70vh
+        div.header_intro
+            padding: 10% 10% 0 10%
+
+@media(min-width: $desktop)
+    header
+        position: relative
+        min-height: 0
+        background: url('../images/bg-pattern-intro.svg') no-repeat 35% 50% / 250%, linear-gradient(to right, $very-light-red, $light-red)
+        div.header_intro
+            padding: 100px 130px
+            div.hamburger
+                display: none
+        div.header_info
+            padding: 20px 20px 150px 20px
+            h2
+                font-size: 3.5em
+            h3
+                font-size: 1.3em
+            div.header_btns
+                justify-content: center
+                button
+                    padding: 15px 20px
+                    font-family: inherit
+                    width: 150px
+                    margin: 0 30px
+        nav
+            display: flex
+            position: absolute
+            top: 105px
+            left: 300px
+            width: 80%
+            background-color: transparent
+            text-align: left
+            border-radius: none
+            padding: 0
+            box-shadow: none
+            h4
+                background-position: right 0px top 0px
+                width: 120px
+                margin: 0 30px
+                font-weight: 300
+                filter: brightness(0) invert(1)
+                color: $white
+            ul
+                display: none
+                background-color: $white
+                width: 150px
+                height: min-content
+                margin-top: 15px
+                padding: 20px
+                border-radius: 5px
+                li
+                    color: $gray-header
+                    a
+                        font-weight: 300
+                        color: black
+                    a:hover
+                        font-weight: 600
+
+            div.header_menu_btns
+                position: absolute
+                top: -15px
+                right: 100px
+                border-top: none
+                width: auto
+                margin: 0 auto
+                flex-direction: row
+                .login
+                    font-weight: 300
+                    padding: 0 30px
+                    color: $white
+
+                .sign_up
+                    font-weight: 300
+                    margin: 0 auto
+                    color: $light-red
+                    background: white
+
+    section.designed_for_the_future
+        position: relative
+        h2
+            font-size: 2.6em
+
+        div.img_editor
+            position: absolute
+            top: -5%
+            right: -15%
+            height: 800px
+            width: 50%
+            background: url('../images/illustration-editor-desktop.svg') no-repeat center /contain
+        div.articles
+            width: 50%
+            article
+                padding: 40px 0 40px 10vw
+                text-align: left
+                h3
+                    font-size: 1.8em
+
+    section.state_of_the_art_infrastructure
+        position: relative
+        background: url('../images/bg-pattern-circles.svg') -50% 100% /70% no-repeat, linear-gradient(to bottom right, $very-dark-gray-blue, $very-dark-desaturated-blue)
+        min-height: 0
+        height: 400px
+        div.phones-img
+            height: 600px
+            width: 600px
+            margin: 0
+            top: -80px
+            left: 100px
+            background: url('../images/illustration-phones.svg') 0%/90% no-repeat
+        article
+            position: absolute
+            top: 50%
+            left: 700px
+            transform: translate(0, -50%)
+            padding: 0 30px 0 0
+
+    section.laptop
+        position: relative
+        min-height: 800px
+        div.img-laptop
+            position: absolute
+            top: -5%
+            left: -15%
+            height: 800px
+            width: 50%
+            margin: 0 auto
+            background: url('../images/illustration-laptop-desktop.svg') no-repeat center /contain
+        div.articles
+            margin-top: 10vh
+            article
+                margin-left: 50vw
+                width: 50%
+                padding: 5vw 10vw 0 10px
+                text-align: left
+                h3
+                    font-size: 1.8em
+    footer
+        display: flex
+        text-align: left
+        padding-bottom: 80px
+        div.img
+            img
+                padding: 100px 10vw
+        div.container
+            display: flex
+            justify-content: space-around
+            margin-top: 70px
+            width: 70vw
+            div.row
+                ul
+                    li:hover
+                        text-decoration: underline

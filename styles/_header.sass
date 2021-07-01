@@ -1,0 +1,111 @@
+header
+    width: 100%
+    min-height: 80vh
+    background: url('../images/bg-pattern-intro.svg') no-repeat 40% 45% / 300%, linear-gradient(to bottom right, $very-light-red, $light-red)
+    border-radius: 0 0 0 80px
+    div.header_intro
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 15% 10%
+
+        div.hamburger
+            background: url("../images/icon-hamburger.svg") no-repeat
+            height: 30px
+            width: 30px
+            transform: translateY(-5px)
+        div.active
+            background: url("../images/icon-close.svg") no-repeat
+
+    div.header_info
+        color: $white
+        padding: 15% 10%
+        text-align: center
+
+        h2
+            font-size: 2.1em
+        h3
+            font-weight: 300
+            font-size: 1.1em
+            margin: 40px 0 80px 0
+        div.header_btns
+            display: flex
+            justify-content: space-around
+
+            button
+                padding: 15px 20px
+                font-family: inherit
+                font-weight: 600
+                font-size: 1.1em
+                border: 1px solid $white
+                border-radius: 40px
+                background-color: transparent
+                color: $white
+            button:hover
+                border: none
+                background-color: $white
+                color: $light-red
+    nav
+        display: none
+        position: absolute
+        width: 90vw
+        left: 5vw
+        background-color: $white
+        text-align: center
+        border-radius: 5px
+        padding: 30px 0
+        box-shadow: 0px 1px 8px $very-dark-grayish-blue
+        h4
+            margin: 30px 0
+            background-image: url('../images/down.svg')
+            background-repeat: no-repeat
+            background-position: 70% 0px
+            background-size: 15px
+            font-size: 1.3em
+            text-decoration: none
+            color: $very-dark-grayish-blue
+            margin-right: 10px
+        h4.down
+            background-image: url('../images/up.svg')
+        ul
+            display: none
+            background-color: #0b050421
+            width: 90%
+            margin: 0 auto
+            border-radius: 5px
+            li
+                list-style: none
+                line-height: 2em
+                color: $gray-header
+                padding: 5px
+                a
+                    text-decoration: none
+                    color: inherit
+                    font-weight: 600
+
+        div.header_menu_btns
+            border-top: 1px solid #0b050421
+            width: 90%
+            margin: 0 auto
+            display: flex
+            flex-direction: column
+            .login
+                font-size: 1.3em
+                font-weight: 600
+                font-family: inherit
+                border: none
+                background: none
+                padding: 30px
+                color: $very-dark-grayish-blue
+
+            .sign_up
+                font-size: 1.3em
+                font-weight: 600
+                font-family: inherit
+                border-radius: 30px
+                border: none
+                width: 150px
+                padding: 10px
+                margin: 0 auto
+                color: $white
+                background: linear-gradient(to bottom right, $very-light-red, $light-red)
